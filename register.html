@@ -25,22 +25,6 @@
     </div>
 
     <script>
-     // Function to display current date
-        function displayDate() {
-            const today = new Date();
-            const formattedDate = today.toISOString().split('T')[0]; // Format: YYYY-MM-DD
-            document.getElementById("currentDate").value = formattedDate;
-        }
-        
-        // Ensure date updates when the page loads
-        window.onload = displayDate;
-    </script>
-</head>
-<body>
-    <h1>Daily Planner</h1>
-    
-    <label for="currentDate">Date:</label>
-    <input type="date" id="currentDate" readonly>
 
         document.addEventListener("DOMContentLoaded", function() {
             let savedData = JSON.parse(localStorage.getItem("dailyPlanner"));
